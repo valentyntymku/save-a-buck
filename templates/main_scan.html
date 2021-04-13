@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>save-a-buck</title>
+   </head>
+   <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+   <table border=2 cellspacing=2 cellpadding=5 class="sortable">
+      <tr>
+         <th>region</th>
+         <th>instanceId</th>
+         <th>instanceType</th>
+         <th>avgCpuUtilization</th>
+         <th>maxCpuUtilization</th>
+      </tr>
+      {{execution_output|safe}}
+   </table>
+   <table border=2 cellspacing=2 cellpadding=5>
+      <tr>
+         <td colspan="5">Average cpu utilization for the region is {{percent}}%. Request executed in {{rseconds}} seconds.</td>
+      </tr>
+   </table>

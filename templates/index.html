@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+   <head>
+      <meta charset="UTF-8">
+      <title>save-a-buck</title>
+   </head>
+   <body>
+      Please choose the region to start with and press </select></form><button type="submit" form="form1" value="Submit">Submit</button> 
+      <form action='/main_scan' method='get' id='form1'>
+        <select name="region" method="GET" action="/">
+        {% for region in regions %}
+        <option value="{{region}}" SELECTED>{{region}}</option>
+        {% endfor %}
+        </select>
+      </form>
+   </body>
+</html>
