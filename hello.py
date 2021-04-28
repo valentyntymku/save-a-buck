@@ -10,8 +10,12 @@ import time
 import boto3
 from botocore.exceptions import ClientError
 
+#from flask_bootstrap import Bootstrap
 from flask import Flask, render_template, request
+
 app = Flask(__name__)
+#bootstrap = Bootstrap(app)
+#app.config['BOOTSTRAP_BOOTSWATCH_THEME'] = 'lumen'
 
 SESSION = boto3.Session()
 
